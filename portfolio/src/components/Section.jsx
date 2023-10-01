@@ -12,7 +12,7 @@ const Section = ({ id, title, children, isPredecessor }) => {
     <Wrapper>
       <div
         id={id}
-        className="section"
+        className="section hidden-element"
         onMouseOver={handleMouseOver}
         onMouseLeave={handleMouseLeave}
       >

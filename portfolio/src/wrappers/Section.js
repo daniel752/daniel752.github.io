@@ -5,16 +5,23 @@ const Wrapper = styled.section`
   justify-content: center;
   width: 100%;
 
-  .section:hover {
+  .section {
     opacity: 1;
     transition: opacity 1.5s ease;
+    width: 100%;
   }
 
-  .section {
+  .hidden-element {
     opacity: 0;
     transition: opacity 2s ease;
     width: 100%;
   }
+
+  /* .section {
+    opacity: 0;
+    transition: opacity 2s ease;
+    width: 100%;
+  } */
 
   .section-title {
     position: relative;

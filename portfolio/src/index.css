@@ -147,7 +147,7 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  position: sticky;
+  position: absolute;
   z-index: 3;
   width: fit-content;
   height: fit-content;

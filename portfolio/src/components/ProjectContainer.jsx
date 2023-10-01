@@ -35,9 +35,9 @@ const ProjectContainer = ({ title, image, description, techStack, href }) => {
       <p>{description}</p>
       <div className="tech-stack">
         {techStack &&
-          techStack.map((element) => {
+          techStack.map((element, index) => {
             return (
-              <div className="tech-stack-item">
+              <div key={index} className="tech-stack-item">
                 <IconContext.Provider value={{ size: 56 }}>
                   {element?.icon ? (
                     <span className="tech-icon">{element.icon}</span>

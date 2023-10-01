@@ -11,7 +11,7 @@ const Wrapper = styled.section`
     font-family: "Comfortaa";
     font-size: xx-large;
     width: 70ch;
-    height: auto;
+    height: 40rem;
   }
 
   p {

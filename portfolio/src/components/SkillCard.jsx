@@ -9,11 +9,9 @@ const SkillCard = ({ title, icons }) => {
           {icons &&
             icons.map((icon, index) => {
               return (
-                <div className="icon-container">
+                <div key={index} className="icon-container">
                   {icon?.icon ? (
-                    <span key={index} className="icon">
-                      {icon.icon}
-                    </span>
+                    <span className="icon">{icon.icon}</span>
                   ) : (
                     <img className="icon" src={icon.image}></img>
                   )}

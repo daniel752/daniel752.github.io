@@ -17,16 +17,11 @@ const Wrapper = styled.section`
     width: 100%;
   }
 
-  /* .section {
-    opacity: 0;
-    transition: opacity 2s ease;
-    width: 100%;
-  } */
-
   .section-title {
     position: relative;
     padding-bottom: 1rem;
     font-size: 100px;
+    margin: 2rem;
   }
 
   .section-title::after {

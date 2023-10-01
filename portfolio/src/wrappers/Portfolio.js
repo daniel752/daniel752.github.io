@@ -51,6 +51,7 @@ const Wrapper = styled.section`
     max-width: 99rem;
     max-height: fit-content;
     text-align: left;
+    font-size: 1.5rem;
     padding: 0px 0.5rem;
   }
 

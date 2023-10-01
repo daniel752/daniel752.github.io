@@ -11,11 +11,12 @@ const Wrapper = styled.section`
     font-family: "Comfortaa";
     font-size: xx-large;
     width: 70ch;
-    height: 40rem;
+    height: 30rem;
   }
 
   p {
     text-align: left;
+    margin: 0;
   }
 `;
 

@@ -4,7 +4,12 @@ import React, { useEffect, useRef } from "react";
 
 const HomeLayout = () => {
   const sections = [
-    { id: "home", component: <Landing />, isPredecessor: true },
+    {
+      id: "home",
+      component: <Landing />,
+      title: "Hello! I'm Daniel Arbiv",
+      isPredecessor: true,
+    },
     {
       id: "skills",
       component: <Skills />,

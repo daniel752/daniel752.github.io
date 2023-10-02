@@ -20,7 +20,6 @@ const Wrapper = styled.section`
   .section-title {
     position: relative;
     padding-bottom: 1rem;
-    font-size: 100px;
     margin: 2rem;
   }
 
@@ -35,17 +34,13 @@ const Wrapper = styled.section`
   }
 
   h1 {
-    font-family: Comfortaa;
-    font-size: 40px;
     display: flex;
     justify-content: center;
   }
 
   .arrow-container {
     position: relative;
-    width: 40px;
-    height: 60px;
-    margin: 5rem auto 0 auto;
+    margin-top: 2rem;
   }
 
   .arrow {
@@ -55,10 +50,18 @@ const Wrapper = styled.section`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #000;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000;
     animation: moveDownUp 2s infinite;
+  }
+
+  @media (min-width: 992px) {
+    .arrow {
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #000;
+    }
   }
 `;
 

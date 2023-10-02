@@ -8,10 +8,10 @@ const Wrapper = styled.section`
   justify-content: center;
 
   .projects {
-    margin: 0 auto;
-    display: grid;
-    grid-auto-rows: auto;
-    row-gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
   }
 
   .container {
@@ -22,37 +22,19 @@ const Wrapper = styled.section`
   .project {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    max-height: 100%;
+    width: 95%;
+    height: auto;
     padding: 0.5rem 1rem;
-  }
-
-  .image.container {
-    width: 100%;
-    height: 100%;
-    max-width: 100rem;
-    max-height: fit-content;
-    box-shadow: var(--shadow-2);
   }
 
   .image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: var(--radius-1);
-  }
-
-  p {
-    width: 100%;
-    height: 100%;
-    max-width: 99rem;
-    max-height: fit-content;
-    text-align: left;
-    font-size: 1.5rem;
-    padding: 0px 0.5rem;
+    box-shadow: var(--shadow-around-2);
   }
 
   a {
@@ -117,6 +99,12 @@ const Wrapper = styled.section`
 
   .tech-image {
     max-width: 60px;
+  }
+
+  @media (min-width: 992px) {
+    .projects {
+      row-gap: 5rem;
+    }
   }
 `;
 

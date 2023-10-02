@@ -17,7 +17,7 @@ const ProjectContainer = ({ title, image, description, techStack, href }) => {
 
   return (
     <div className="project container">
-      <h1>{title}</h1>
+      <h3>{title}</h3>
       <div
         className={`image container ${
           playFloatAnimation ? "float-animation" : ""

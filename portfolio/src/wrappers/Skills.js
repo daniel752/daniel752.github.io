@@ -9,36 +9,73 @@ const Wrapper = styled.section`
 
   .card {
     display: grid;
-    justify-items: center;
-    margin-bottom: 5rem;
+    justify-content: start;
+    margin-bottom: 3rem;
   }
 
   .icons {
     display: flex;
-    column-gap: 5rem;
-    -webkit-box-align: center;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 0.5rem;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    padding-left: 1rem;
   }
 
   .icon-container {
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
+    width: 6rem;
+    row-gap: 0.2rem;
     align-items: center;
   }
 
+  h3 {
+    margin: 0 1rem 1rem 1rem;
+  }
+
   .icon {
-    width: 7.5rem;
+    width: 2rem;
+    height: auto;
+    object-fit: cover;
+  }
+
+  svg {
+    width: 2rem;
     height: auto;
   }
 
   .icon-name {
   }
 
-  h3 {
-    margin-top: 0;
-    font-size: 56px;
+  /* Medium Screens */
+  @media (min-width: 600px) {
+  }
+
+  @media (min-width: 992px) {
+    .card {
+      justify-items: center;
+      justify-content: center;
+      margin-bottom: 5rem;
+    }
+
+    .icons {
+      column-gap: 5rem;
+    }
+
+    .icon-container {
+      row-gap: 1rem;
+    }
+
+    .icon {
+      width: 7.5rem;
+    }
+
+    svg {
+      width: 7.5rem;
+      height: auto;
+    }
   }
 `;
 

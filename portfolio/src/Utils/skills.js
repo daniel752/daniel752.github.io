@@ -50,7 +50,7 @@ const skills = [
     title: "Front-End",
     icons: [
       { name: "React", icon: <BiLogoReact /> },
-      { name: "JavaScript", icon: <BiLogoJavascript /> },
+      // { name: "JavaScript", icon: <BiLogoJavascript /> },
       { name: "HTML5", icon: <FaHtml5 /> },
       { name: "CSS3", icon: <FaCss3Alt /> },
       { name: "Bootstrap", icon: <FaBootstrap /> },
@@ -70,7 +70,7 @@ const skills = [
   {
     title: "CI / CD",
     icons: [
-      { name: "Github Actions", icon: <SiGithubactions /> },
+      { name: "Actions", icon: <SiGithubactions /> },
       { name: "Jenkins", icon: <FaJenkins /> },
     ],
   },
@@ -94,7 +94,7 @@ const skills = [
     title: "Game Development",
     icons: [
       { name: "Unity", icon: <FaUnity /> },
-      { name: "Godot", icon: <SiGodotengine /> },
+      // { name: "Godot", icon: <SiGodotengine /> },
     ],
   },
   {

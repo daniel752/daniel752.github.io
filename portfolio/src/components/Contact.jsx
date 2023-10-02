@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <Wrapper>
       <div className="contact-card">
-        <h1 className="title">Want to get in touch?</h1>
+        <h3 className="title">Want to get in touch?</h3>
         <p>We can always get in touch by mail at danielarbiv752@gmail.com</p>
         <p>Or if you are looking for another way to get in touch</p>
         <div className="icons-row">

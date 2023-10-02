@@ -7,16 +7,19 @@ const Wrapper = styled.section`
   justify-content: center;
 
   .landing-container {
-    text-align: start;
-    font-family: "Comfortaa";
-    font-size: xx-large;
-    width: 70ch;
-    height: 30rem;
+    height: fit-content;
   }
 
   p {
     text-align: left;
-    margin: 0;
+    margin: 0 1rem;
+  }
+
+  /* Big Screens */
+  @media (min-width: 992px) {
+    p {
+      margin: 0 4rem 10rem 4rem;
+    }
   }
 `;
 

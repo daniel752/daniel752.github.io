@@ -1,13 +1,13 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const NavLink = ({ id, to, activeClassName, icon, text }) => {
+const NavLink = ({ id, to, icon, text, callback }) => {
   const { hash } = useLocation(); // Get the current pathname from the location
   const isActive = hash === to;
 
   return (
     <div className="nav-container">
-      <a href={to} className="nav-link">
+      <a href={to} className="nav-link" onClick={callback ? callback : null}>
         <span className="icon">{icon}</span>
         {text}
       </a>

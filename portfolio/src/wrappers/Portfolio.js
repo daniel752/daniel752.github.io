@@ -37,11 +37,17 @@ const Wrapper = styled.section`
     box-shadow: var(--shadow-around-2);
   }
 
-  a {
+  .view-button {
     padding: 0.5rem;
     box-shadow: var(--shadow-3);
     border-radius: var(--radius-1);
     background-color: var(--grey-2);
+  }
+
+  .git-icon {
+    width: 10vw;
+    height: auto;
+    margin-bottom: 3rem;
   }
 
   .modal {

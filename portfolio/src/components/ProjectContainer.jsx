@@ -54,7 +54,7 @@ const ProjectContainer = ({ title, image, description, techStack, href }) => {
             );
           })}
       </div>
-      <a href={href} target="_blank">
+      <a className="view-button" href={href} target="_blank">
         View Project
       </a>
 

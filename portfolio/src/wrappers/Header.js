@@ -52,7 +52,7 @@ const Wrapper = styled.section`
   }
 
   .nav-container {
-    width: 100%;
+    width: fit-content;
   }
 
   .logo {
@@ -79,7 +79,7 @@ const Wrapper = styled.section`
       align-items: center;
     }
 
-    .nav-container {
+    .navs-container {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -93,6 +93,11 @@ const Wrapper = styled.section`
       font-size: 22px;
       text-decoration: none;
       text-transform: capitalize;
+    }
+
+    .nav-link svg {
+      width: auto;
+      height: 100%;
     }
 
     .active-nav-link {

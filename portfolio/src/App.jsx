@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Landing,
-  Portfolio,
-  Resume,
-  About,
-  Contact,
-  Services,
-  Skills,
-} from "./components";
+import { Landing, Portfolio, Contact, Services, Skills } from "./components";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomeLayout from "./HomeLayout";
 
@@ -23,14 +15,6 @@ const router = createBrowserRouter([
       {
         path: "projects",
         element: <Portfolio />,
-      },
-      {
-        path: "resume",
-        element: <Resume />,
-      },
-      {
-        path: "about",
-        element: <About />,
       },
       {
         path: "contact",

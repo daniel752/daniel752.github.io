@@ -73,6 +73,8 @@ html {
 
   /* NavBar */
   --nav-height: 3rem;
+  --sections-margin-top-small-screen: 3.5rem;
+  --sections-margin-top-big-screen: 4.5rem;
 }
 
 .sections {
@@ -80,7 +82,7 @@ html {
   grid-auto-rows: auto;
   row-gap: 2rem;
   width: 100vw;
-  margin-top: -2rem;
+  margin-top: var(--sections-margin-top-small-screen);
 }
 
 a:visited {
@@ -186,7 +188,8 @@ a {
   }
 
   .sections {
-    row-gap: 20rem;
+    margin-top: var(--sections-margin-top-big-screen);
+    row-gap: 10rem;
   }
 
   .resume-container {

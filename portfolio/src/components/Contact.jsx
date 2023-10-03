@@ -9,7 +9,7 @@ const Contact = () => {
     <Wrapper>
       <div className="contact-card">
         <h3 className="title">Want to get in touch?</h3>
-        <p>We can always get in touch by mail at danielarbiv752@gmail.com</p>
+        <p>We can always get in touch by email at danielarbiv752@gmail.com </p>
         <p>Or if you are looking for another way to get in touch</p>
         <div className="icons-row">
           <IconContext.Provider value={{ size: 100 }}>

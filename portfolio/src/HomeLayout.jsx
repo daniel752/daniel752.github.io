@@ -1,6 +1,6 @@
 import { Contact, Header, Landing, Portfolio, Skills } from "./components";
 import { Section } from "./components";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 const HomeLayout = () => {
   const sections = [
@@ -62,7 +62,7 @@ const HomeLayout = () => {
   return (
     <>
       <Header />
-      <div className="resume-container">
+      {/* <div className="resume-container">
         <a
           className="resume-btn"
           href="https://drive.google.com/file/d/16dZnnYpCOkNUp-SmHDayjQSNhKq0wo8v/view?usp=sharing"
@@ -78,7 +78,7 @@ const HomeLayout = () => {
         >
           Download Resume
         </a>
-      </div>
+      </div> */}
       <div className="sections">
         {sections.map((section) => (
           <Section

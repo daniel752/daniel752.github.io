@@ -3,45 +3,65 @@ import NavLink from "./NavLink";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
-const NavLinks = () => {
-  const [isNavFolded, setIsNavFolded] = useState(true);
+const NavLinks = ({ isHiddenNav }) => {
+  const [isNavClosed, setIsNavClosed] = useState(true);
 
   const openNavMenu = () => {
     const navLinks = document.getElementById("nav-links");
-    navLinks.classList.replace("folded-nav-links", "open-nav-menu");
-    setIsNavFolded(false);
+    navLinks.classList.add("open-nav-menu");
+    setIsNavClosed(false);
   };
 
   const closeNavMenu = () => {
     const navLinks = document.getElementById("nav-links");
-    navLinks.classList.replace("open-nav-menu", "folded-nav-links");
-    setIsNavFolded(true);
+    navLinks.classList.remove("open-nav-menu");
+    setIsNavClosed(true);
   };
 
   return (
-    <div className="nav-container">
-      {isNavFolded && (
+    <div className="navs-container">
+      {isHiddenNav && isNavClosed && (
         <span className="nav-menu" onClick={openNavMenu}>
           <AiOutlineMenu />
         </span>
       )}
-      <div
-        id="nav-links"
-        className={isNavFolded ? "folded-nav-links" : "nav-links"}
-      >
-        {links.map((link) => {
-          return (
-            <NavLink
-              id={link.text}
-              to={link.path}
-              key={link.text}
-              icon={link.icon}
-              text={link.text}
-              callback={closeNavMenu}
-            ></NavLink>
-          );
-        })}
-      </div>
+      {isHiddenNav ? (
+        <div
+          id="nav-links"
+          className={
+            isHiddenNav && isNavClosed ? "folded-nav-links" : "open-nav-menu"
+          }
+        >
+          {links.map((link) => {
+            return (
+              <NavLink
+                id={link.text}
+                to={link.path}
+                key={link.text}
+                icon={link.icon}
+                text={link.text}
+                isNewWindow={link.isNewWindow}
+                callback={closeNavMenu}
+              ></NavLink>
+            );
+          })}
+        </div>
+      ) : (
+        <div className="nav-links">
+          {links.map((link) => {
+            return (
+              <NavLink
+                id={link.text}
+                to={link.path}
+                key={link.text}
+                icon={link.icon}
+                text={link.text}
+                isNewWindow={link.isNewWindow}
+              ></NavLink>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };

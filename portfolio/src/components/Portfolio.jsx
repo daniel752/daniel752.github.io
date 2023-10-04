@@ -19,7 +19,9 @@ const Portfolio = () => {
             />
           );
         })}
-        <h3>You can view more of my projects on Github</h3>
+        <h3 className="end-title">
+          You can view more of my projects on Github
+        </h3>
         <a href="https://github.com/daniel752" target="_blank">
           <FaGithub className="git-icon" />
         </a>

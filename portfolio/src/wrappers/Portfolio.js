@@ -37,6 +37,10 @@ const Wrapper = styled.section`
     box-shadow: var(--shadow-around-2);
   }
 
+  p {
+    margin: 1rem 0;
+  }
+
   .view-button {
     padding: 0.5rem;
     box-shadow: var(--shadow-3);
@@ -105,6 +109,10 @@ const Wrapper = styled.section`
 
   .tech-image {
     max-width: 60px;
+  }
+
+  .end-title {
+    margin: 0 1rem;
   }
 
   @media (min-width: 992px) {

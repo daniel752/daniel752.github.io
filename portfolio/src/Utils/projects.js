@@ -36,7 +36,7 @@ const projects = [
   {
     id: "3",
     title: "Accessibility Tester",
-    image: "/assets/images/ben-sweet-2LowviVHZ-E-unsplash.jpg",
+    image: "/assets/images/accessibility-tester-screenshot.png",
     description:
       "Accessibility Tester is a Python GUI program designed to help website owners and developers test the accessibility of their sites. It checks every accessibility aspect of the site, including color contrast, font sizes, alternative text, and more. The GUI was implemented using Tkinter, and accessibility tests were implemented using BeautifulSoup, an HTML/XML parser, and the automation tool Selenium.",
     techStack: [

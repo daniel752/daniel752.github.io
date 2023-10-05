@@ -9,13 +9,17 @@ const NavLinks = ({ isHiddenNav }) => {
   const openNavMenu = () => {
     const navLinks = document.getElementById("nav-links");
     navLinks.classList.add("open-nav-menu");
+    navLinks.style.overflow = "hidden";
     setIsNavClosed(false);
+    document.body.style.overflow = "hidden";
   };
 
   const closeNavMenu = () => {
     const navLinks = document.getElementById("nav-links");
     navLinks.classList.remove("open-nav-menu");
+    navLinks.style.overflow = "";
     setIsNavClosed(true);
+    document.body.style.overflow = "";
   };
 
   return (

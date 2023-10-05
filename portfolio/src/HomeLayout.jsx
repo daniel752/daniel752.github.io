@@ -62,23 +62,6 @@ const HomeLayout = () => {
   return (
     <>
       <Header />
-      {/* <div className="resume-container">
-        <a
-          className="resume-btn"
-          href="https://drive.google.com/file/d/16dZnnYpCOkNUp-SmHDayjQSNhKq0wo8v/view?usp=sharing"
-          target="_blank"
-        >
-          View Resume
-        </a>
-        <a
-          className="resume-btn"
-          href="https://drive.google.com/uc?export=download&id=16dZnnYpCOkNUp-SmHDayjQSNhKq0wo8v"
-          download="Daniel Arbiv.pdf"
-          target="_blank"
-        >
-          Download Resume
-        </a>
-      </div> */}
       <div className="sections">
         {sections.map((section) => (
           <Section

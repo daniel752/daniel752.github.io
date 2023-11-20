@@ -21,7 +21,7 @@ const links = [
   },
   {
     text: "resume",
-    path: "https://drive.google.com/file/d/1eqKw9Al_NWlX3DBIKAz_Sv4jsm4BGWqB/view?usp=sharing",
+    path: "https://drive.google.com/file/d/1ws_v3fek3ZjgcEv8VtsfEGDZyX32fyhi/view?usp=sharing",
     icon: <RiArticleFill />,
     isNewWindow: true,
   },

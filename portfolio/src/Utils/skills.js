@@ -1,13 +1,9 @@
-import { TbBrandCpp } from "react-icons/tb";
 import { BiLogoMongodb, BiLogoReact, BiLogoJavascript } from "react-icons/bi";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faC } from "@fortawesome/free-solid-svg-icons";
 
 import {
   FaNodeJs,
   FaJava,
   FaPython,
-  FaBootstrap,
   FaHtml5,
   FaCss3Alt,
   FaUnity,
@@ -18,28 +14,26 @@ import {
   FaLinux,
   FaWindows,
 } from "react-icons/fa";
-import { MdOutlineSoupKitchen } from "react-icons/md";
+
 import {
   SiExpress,
-  SiJquery,
   SiFirebase,
   SiMongoose,
   SiGithubactions,
   SiKubernetes,
   SiVmware,
   SiVirtualbox,
-  SiGodotengine,
   SiSelenium,
+  SiGnubash,
+  SiQt,
+  SiOpengl,
 } from "react-icons/si";
 
 const skills = [
   {
     title: "Programming Languages",
     icons: [
-      {
-        name: "C",
-        image: "/assets/images/icons8-c-programming-120.png",
-      },
+      { name: "C", image: "/assets/images/icons8-c-programming-120.png" },
       { name: "C++", image: "/assets/images/icons8-c-120.png" },
       { name: "Java", icon: <FaJava /> },
       { name: "Python", icon: <FaPython /> },
@@ -47,25 +41,35 @@ const skills = [
     ],
   },
   {
-    title: "Front-End",
+    title: "Scripting Languages",
     icons: [
-      { name: "React", icon: <BiLogoReact /> },
-      // { name: "JavaScript", icon: <BiLogoJavascript /> },
-      { name: "HTML5", icon: <FaHtml5 /> },
-      { name: "CSS3", icon: <FaCss3Alt /> },
-      { name: "Bootstrap", icon: <FaBootstrap /> },
-      { name: "jQuery", icon: <SiJquery /> },
-    ],
+      { name: "Bash", icon: <SiGnubash /> },
+    ]
   },
   {
-    title: "Back-End",
+    title: "Web Development",
     icons: [
+      { name: "HTML5", icon: <FaHtml5 /> },
+      { name: "CSS3", icon: <FaCss3Alt /> },
+      { name: "React", icon: <BiLogoReact /> },
       { name: "NodeJS", icon: <FaNodeJs /> },
       { name: "Express", icon: <SiExpress /> },
       { name: "MongoDB", icon: <BiLogoMongodb /> },
       { name: "Firebase", icon: <SiFirebase /> },
       { name: "Mongoose", icon: <SiMongoose /> },
     ],
+  },
+  {
+    title: "Native Development",
+    icons: [
+      { name: "Qt", icon: <SiQt /> },
+    ]
+  },
+  {
+    title: "Automation",
+    icons: [
+      { name: "Selenium", icon: <SiSelenium /> },
+    ]
   },
   {
     title: "CI / CD",
@@ -91,10 +95,15 @@ const skills = [
     ],
   },
   {
+    title: "Graphics and Visualization",
+    icons: [
+      { name: "OpenGL", icon: <SiOpengl /> },
+    ]
+  },
+  {
     title: "Game Development",
     icons: [
       { name: "Unity", icon: <FaUnity /> },
-      // { name: "Godot", icon: <SiGodotengine /> },
     ],
   },
   {

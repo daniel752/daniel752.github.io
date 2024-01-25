@@ -1,26 +1,24 @@
 import { BiLogoMongodb, BiLogoReact, BiLogoJavascript } from "react-icons/bi";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiOpengl } from "react-icons/si";
 import { FaNodeJs, FaPython } from "react-icons/fa";
 import { MdOutlineSoupKitchen } from "react-icons/md";
 
 const projects = [
   {
     id: "1",
-    title: "MarkdownZen",
-    image: "/assets/images/markdown-zen-screenshot.png",
+    title: "OpenGL Tutorial",
+    image: "/assets/images/opengl-image.png",
     description:
-      "MarkdownZen, a project I spearheaded, demonstrates my experience in full-stack development. It's a comprehensive, multi-page web application designed to simplify Markdown document (.md) creation, organization, and collaborative editing. The app employs JWT-based user authentication with HTTP-only cookies and user input sanitization using middleware for enhanced security. Efficient proxy setup facilitates seamless communication between the frontend and backend, while Git integration ensures effective version control for the application itself. MarkdownZen serves as a testament to my skill set in modern web technologies and user-focused application design.",
+      "Compiled this collection of mini projects while studying the fundamentals of OpenGL",
     techStack: [
-      { name: "MongoDB", icon: <BiLogoMongodb /> },
-      { name: "Express", icon: <SiExpress /> },
-      { name: "React", icon: <BiLogoReact /> },
-      { name: "Node", icon: <FaNodeJs /> },
+      { name: "C++", image: "/assets/images/icons8-c-120.png" },
+      { name: "OpenGL", icon: <SiOpengl /> },
     ],
-    href: "https://markdown-zen.onrender.com/",
+    href: "https://github.com/daniel752/opengl-tutorial",
   },
   {
     id: "2",
-    title: "BBIS Hide and Extract",
+    title: "Data Hiding in Executables",
     image: "/assets/images/steganography-image.png",
     description:
       "This project serves as a Proof of Concept (PoC) demonstrating a novel steganography technique. It showcases the ability to hide a file within an executable without compromising its functionality. By replacing assembly instructions with equivalent ones based on binary input, the program successfully encodes binary data within the executable file.",
@@ -45,6 +43,20 @@ const projects = [
       { name: "BeautifulSoup", icon: <MdOutlineSoupKitchen /> },
     ],
     href: "https://github.com/daniel752/Accessibility-Tester",
+  },  
+  {
+    id: "4",
+    title: "MarkdownZen",
+    image: "/assets/images/markdown-zen-screenshot.png",
+    description:
+      "MarkdownZen, a project I spearheaded, demonstrates my experience in full-stack development. It's a comprehensive, multi-page web application designed to simplify Markdown document (.md) creation, organization, and collaborative editing. The app employs JWT-based user authentication with HTTP-only cookies and user input sanitization using middleware for enhanced security. Efficient proxy setup facilitates seamless communication between the frontend and backend, while Git integration ensures effective version control for the application itself. MarkdownZen serves as a testament to my skill set in modern web technologies and user-focused application design.",
+    techStack: [
+      { name: "MongoDB", icon: <BiLogoMongodb /> },
+      { name: "Express", icon: <SiExpress /> },
+      { name: "React", icon: <BiLogoReact /> },
+      { name: "Node", icon: <FaNodeJs /> },
+    ],
+    href: "https://markdown-zen.onrender.com/",
   },
 ];
 

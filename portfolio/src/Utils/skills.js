@@ -35,7 +35,7 @@ const skills = [
     icons: [
       { name: "C", image: "/assets/images/icons8-c-programming-120.png" },
       { name: "C++", image: "/assets/images/icons8-c-120.png" },
-      { name: "Java", icon: <FaJava /> },
+      // { name: "Java", icon: <FaJava /> },
       { name: "Python", icon: <FaPython /> },
       { name: "JavaScript", icon: <BiLogoJavascript /> },
     ],
@@ -46,19 +46,19 @@ const skills = [
       { name: "Bash", icon: <SiGnubash /> },
     ]
   },
-  {
-    title: "Web Development",
-    icons: [
-      { name: "HTML5", icon: <FaHtml5 /> },
-      { name: "CSS3", icon: <FaCss3Alt /> },
-      { name: "React", icon: <BiLogoReact /> },
-      { name: "NodeJS", icon: <FaNodeJs /> },
-      { name: "Express", icon: <SiExpress /> },
-      { name: "MongoDB", icon: <BiLogoMongodb /> },
-      { name: "Firebase", icon: <SiFirebase /> },
-      { name: "Mongoose", icon: <SiMongoose /> },
-    ],
-  },
+  // {
+  //   title: "Web Development",
+  //   icons: [
+  //     { name: "HTML5", icon: <FaHtml5 /> },
+  //     { name: "CSS3", icon: <FaCss3Alt /> },
+  //     { name: "React", icon: <BiLogoReact /> },
+  //     { name: "NodeJS", icon: <FaNodeJs /> },
+  //     { name: "Express", icon: <SiExpress /> },
+  //     { name: "MongoDB", icon: <BiLogoMongodb /> },
+  //     { name: "Firebase", icon: <SiFirebase /> },
+  //     { name: "Mongoose", icon: <SiMongoose /> },
+  //   ],
+  // },
   {
     title: "Native Development",
     icons: [
@@ -82,7 +82,7 @@ const skills = [
     title: "Containerization / Virtualization",
     icons: [
       { name: "Docker", icon: <FaDocker /> },
-      { name: "Kubernetes", icon: <SiKubernetes /> },
+      // { name: "Kubernetes", icon: <SiKubernetes /> },
       { name: "VMware", icon: <SiVmware /> },
       { name: "VirtualBox", icon: <SiVirtualbox /> },
     ],
@@ -95,17 +95,17 @@ const skills = [
     ],
   },
   {
-    title: "Graphics and Visualization",
+    title: "Graphics Programming",
     icons: [
       { name: "OpenGL", icon: <SiOpengl /> },
     ]
   },
-  {
-    title: "Game Development",
-    icons: [
-      { name: "Unity", icon: <FaUnity /> },
-    ],
-  },
+  // {
+  //   title: "Game Development",
+  //   icons: [
+  //     { name: "Unity", icon: <FaUnity /> },
+  //   ],
+  // },
   {
     title: "OS",
     icons: [

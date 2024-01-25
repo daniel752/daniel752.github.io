@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import typeWriter from "../Utils/typeWriter";
 import Wrapper from "../wrappers/Landing";
+import paragraph from "../Utils/text";
 
 // const titleText = "Hello! I'm Daniel Arbiv";
-const paragraph =
-  "A 30-year-old software enthusiast hailing from the vibrant landscape of Israel. Fresh off the academic stage with a recent Bachelor's degree in Software Engineering, I'm here to share my passion and skills with you. I'm a versatile developer, comfortable with both front-end and back-end technologies, making me a full-stack powerhouse. My journey through the world of software has taken me from the intriguing realms of game development to the fascinating field of cybersecurity. But, beyond the coding and programming, there's a lot more to me. As a true gamer, I spent my childhood exploring virtual worlds and honing my strategic skills. When I'm not immersed in code, you'll often find me enjoying quality time with friends or indulging in a Netflix binge, complete with a tub of Ben & Jerry's ice cream in hand. Welcome to my portfolio, where technology meets creativity, and where we can embark on exciting tech adventures together. Feel free to explore, and let's connect to turn innovative ideas into reality.";
+// const paragraph =
+  // "A 30-year-old software enthusiast hailing from the vibrant landscape of Israel. Fresh off the academic stage with a recent Bachelor's degree in Software Engineering, I'm here to share my passion and skills with you. I'm a versatile software, through the years i've learned the basics of a few field until i've found the one for me. I've tried at the";
 const typingSpeed = 20; // Miliseconds
 
 const Landing = () => {
